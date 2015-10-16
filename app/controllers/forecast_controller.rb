@@ -24,8 +24,6 @@ require 'json'
 
 parsed_data = JSON.parse(open(url).read)
 
-   # @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
-
     @current_temperature = parsed_data["currently"]["temperature"]
 
     @current_summary = parsed_data["currently"]["summary"]
